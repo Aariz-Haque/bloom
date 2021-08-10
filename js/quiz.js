@@ -19,7 +19,7 @@ window.onload=sendApiRequest
 
 async function sendApiRequest() {
     
-    let response = await fetch(`https://opentdb.com/api.php?amount=13&category=19&difficulty=medium&type=multiple`);
+    let response = await fetch(`https://opentdb.com/api.php?amount=50&category=21&difficulty=easy&type=multiple`);
     console.log(response)
     let data=await response.json()
     useApiData(data)
